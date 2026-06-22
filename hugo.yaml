@@ -1,0 +1,311 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "Alberto Anadón Barcelona"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+params:
+  title: "Alberto Anadón Barcelona"
+  description: "Postdoctoral researcher in spintronics, ultrafast magnetism and 3D nanomagnetism"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Alberto Anadón"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Alberto Anadón Barcelona."
+    subtitle: "Spintronics & 3D nanomagnetism researcher"
+    content: "Postdoctoral researcher at INMA (CSIC - Universidad de Zaragoza), working on spin caloritronics, spin-orbitronics, ultrafast magnetism and skyrmion dynamics in 3D nanostructures. Incoming Ramón y Cajal Fellow (2026)."
+    image: /images/me.jpg
+    roundImage: true
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fas fa-graduation-cap
+          url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+          tooltip: Google Scholar
+        - icon: fab fa-orcid
+          url: https://orcid.org/0000-0001-5939-6415
+          tooltip: ORCID
+      customIcons: []
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/nanostructure.png"
+    content: |-
+      I am a physicist working at the interface of **spintronics**, **ultrafast magnetism**, and **3D nanomagnetism**. My research explores how spin and heat currents can be generated, controlled, and exploited in nanoscale magnetic materials — from spin caloritronics and spin-orbit torques to the dynamics of magnetic skyrmions in three-dimensional nanostructures.
+
+      I am currently a postdoctoral researcher at **INMA** (CSIC – Universidad de Zaragoza), where I hold a **Marie Skłodowska-Curie** fellowship and will soon begin a **Ramón y Cajal** fellowship to continue this line of work. Along the way I have been fortunate to work across leading European labs and to collaborate with a wonderful international community of scientists.
+    skills:
+      enable: true
+      title: "Techniques & research areas:"
+      items:
+        - "Spin Seebeck effect"
+        - "Spin-orbit torque"
+        - "Ultrafast magneto-optics (MOKE)"
+        - "Spin-charge interconversion"
+        - "Thin-film growth (sputtering, MBE)"
+        - "Nanolithography"
+        - "3D nanomagnetism"
+        - "Magnetotransport"
+        - "2D materials & topological insulators"
+        - "Skyrmion dynamics"
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - company: "INMA (CSIC - Universidad de Zaragoza)"
+        companyUrl: "https://www.unizar.es/instituto-investigacion/inma"
+        jobs:
+          - name: "MSCA Postdoctoral Researcher"
+            date: "Jul 2024 - present"
+            content: |
+              MSCA Postdoctoral Fellowship project **3D-Sky** — "Thermo-Spin 3D Platform for Skyrmion motion". Supervised by Dr. Cristina Bran (INMA-CSIC) and Prof. Amalio Fernández-Pacheco (TU Wien). Incoming **Ramón y Cajal Fellow** (starting summer 2026).
+      - company: "Institut Jean Lamour"
+        companyUrl: "https://ijl.univ-lorraine.fr/"
+        jobs:
+          - name: "Postdoctoral Researcher"
+            date: "2020 - 2024"
+            content: |
+              Spin-charge interconversion phenomena in topological insulators and 2D materials, under the supervision of Dr. Jon Gorchon and Dr. Juan-Carlos Rojas-Sánchez. Picosecond-timescale spin-orbit torque switching combining THz sources, optics and spintronics. Led project **HISTRA** (IEEE seed funding).
+      - company: "IMDEA Nanociencia"
+        companyUrl: "https://www.nanociencia.imdea.org/"
+        jobs:
+          - name: "Postdoctoral Researcher"
+            date: "2017 - 2020"
+            content: |
+              2D epitaxial growth lab with Prof. Paolo Perna. Spin-orbitronics in ultra-clean epitaxial hybrid 2D-metal systems (graphene/ferromagnet/heavy-metal heterostructures), Dzyaloshinskii-Moriya interaction at graphene/Co interfaces.
+      - company: "Universidad de Zaragoza"
+        companyUrl: "https://www.unizar.es/"
+        jobs:
+          - name: "Predoctoral Fellow (PhD)"
+            date: "2013 - 2017"
+            content: |
+              PhD in Physics under Prof. M.R. Ibarra and Dr. M.H. Aguirre, Institute of Nanoscience of Aragón. Spin caloritronics and spin Seebeck effect in bilayer and multilayer systems for energy-harvesting devices.
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "PhD in Physics"
+        school:
+          name: "Universidad de Zaragoza, Spain"
+        date: "2013 - 2017"
+        content: "Spin caloritronics: high-efficiency energy-harvesting devices based on the spin Seebeck effect."
+      - title: "MSc in Teacher Training (Physics & Chemistry)"
+        school:
+          name: "Universidad de Zaragoza, Spain"
+        date: "2017"
+      - title: "MSc in Physics and Physical Technologies"
+        school:
+          name: "Universidad de Zaragoza, Spain"
+        date: "2013"
+      - title: "BSc in Physics"
+        school:
+          name: "Universidad de Zaragoza, Spain"
+        date: "2012"
+
+  projects:
+    enable: true
+    title: "Selected Publications"
+    items:
+      - title: "Ultrafast Spin Accumulations Drive Magnetization Reversal in Multilayers"
+        image: /images/pubs/prl25.png
+        content: "H. Singh, <strong>A. Anadón</strong>, et al. — Single-shot magnetization reversal in multilayers driven by ultrafast spin accumulation, a fast and energy-efficient switching pathway."
+        badges:
+          - "Phys. Rev. Lett. (2025)"
+        featured:
+          name: "Read paper"
+          link: https://arxiv.org/abs/2508.19675
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Large Spin Accumulation Signals in Ultrafast Magneto-Optical Experiments"
+        image: /images/pubs/spinacc.png
+        content: "<strong>A. Anadón</strong>, H. Singh, et al. — Unusually large spin-accumulation signals detected through ultrafast magneto-optics, far exceeding stationary spintronic regimes."
+        badges:
+          - "Phys. Rev. B 112, 104437 (2025)"
+          - "Editors' Suggestion"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1103/5qnm-zgjt
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Giant and Anisotropic Enhancement of Spin-Charge Conversion in a Graphene-Based Quantum System"
+        image: /images/pubs/advmat.png
+        content: "<strong>A. Anadón</strong> (corresp.), A. Pezo, I. Arnay, R. Guerrero, et al. — A 34-fold increase in spin-to-charge conversion via an epitaxial graphene monolayer between Fe and Pt."
+        badges:
+          - "Adv. Mater. 2418541 (2024)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1002/adma.202418541
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Energy Efficiency of Spin-Orbit Torque Magnetization Switching from Microseconds to Picoseconds"
+        image: /images/pubs/natnano.png
+        content: "E. Díaz, <strong>A. Anadón</strong>, et al. — The energy cost of magnetization reversal mapped across 7 orders of magnitude in pulse duration."
+        badges:
+          - "Nat. Nanotechnol. 20, 36 (2025)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1038/s41565-024-01788-x
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Thermal Spin-Current Generation in the Multifunctional Ferrimagnet Ga₀.₆Fe₁.₄O₃"
+        image: /images/pubs/prapplied.png
+        content: "<strong>A. Anadón</strong> (corresp.), E. Martin, S. Homkar, et al. — A multifunctional oxide with spin-current generation comparable to YIG."
+        badges:
+          - "Phys. Rev. Applied 18, 054087 (2022)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1103/PhysRevApplied.18.054087
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Engineering the Spin Conversion in Graphene Monolayer Epitaxial Structures"
+        image: /images/pubs/aplmat.png
+        content: "<strong>A. Anadón</strong> (corresp.), A. Gudín, et al. — Graphene retains spin current injected from a ferromagnet into a heavy metal, enabling spin-current control."
+        badges:
+          - "APL Mater. 9, 061113 (2021)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1063/5.0048612
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Unraveling Dzyaloshinskii-Moriya Interaction and Chiral Nature of the Graphene/Cobalt Interface"
+        image: /images/pubs/nanolett.png
+        content: "F. Ajejas, A. Gudín, <strong>A. Anadón</strong>, et al. — Graphene-induced perpendicular anisotropy and room-temperature chiral Néel domain walls."
+        badges:
+          - "Nano Lett. 18, 5364 (2018)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1021/acs.nanolett.8b00878
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+      - title: "Thermoelectric Performance of the Spin Seebeck Effect in Fe₃O₄/Pt-Based Thin-Film Heterostructures"
+        image: /images/pubs/apl16.png
+        content: "R. Ramos, <strong>A. Anadón</strong>, I. Lucas, et al. — Spin Seebeck multilayers and spin-Hall thermopiles that enhance thermoelectric voltage and output power."
+        badges:
+          - "APL Mater. 4, 104802 (2016)"
+        featured:
+          name: "Read paper"
+          link: https://doi.org/10.1063/1.4950994
+        links:
+          - icon: fas fa-graduation-cap
+            url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+
+  achievements:
+    enable: true
+    title: "Awards & Recognition"
+    items:
+      - title: "Ramón y Cajal Fellowship"
+        content: "Awarded to start summer 2026 at INMA, continuing research on heat-induced skyrmion dynamics."
+      - title: "MSCA Postdoctoral Fellowship — 3D-Sky"
+        content: "\"Thermo-Spin 3D Platform for Skyrmion motion\", European Commission."
+      - title: "Patent of Invention — Spin Seebeck Thermoelectric Device"
+        content: "With M.R. Ibarra, L. Morellón, M.H. Aguirre, R. Ramos, P.A. Algarabel, I. Lucas. Universidad de Zaragoza / Universidad de Tohoku / CSIC."
+      - title: "Guest Associate Editor, IEEE Access"
+        content: "Since 2024."
+      - title: "HISTRA Project — IEEE Seed Funding Grant"
+        content: "Spin-charge interconversion in epitaxial systems, Institut Jean Lamour."
+
+  contact:
+    enable: true
+    title: "Get in touch"
+    content: "For collaborations, questions about my research, or invitations to talks and reviews, feel free to reach out."
+    btnName: "Email me"
+    btnLink: "mailto:anadonb@unizar.es"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      website: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
