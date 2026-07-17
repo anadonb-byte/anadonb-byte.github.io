@@ -9,6 +9,7 @@ tags:
   - spintronics
 image: /images/pubs/prl25.png
 description: "Our work on how ultrafast spin accumulation controls all-optical switching in magnetic multilayers is out in Physical Review Letters."
+summary: "Our paper on how ultrafast spin accumulation drives all-optical switching in magnetic multilayers has been published in Physical Review Letters 136, 056701 (2026)."
 toc: false
 ---
 
@@ -26,7 +27,7 @@ The main result: **demagnetization- and remagnetization-driven spin accumulation
 
 ## Team
 
-This was work led by **Harjinder Singh**, together with Junta Igarashi, Quentin Remy, Stéphane Mangin, Michel Hehn, Jon Gorchon and Gregory Malinowski, from my time at **Institut Jean Lamour** in Nancy. The CNRS Institute of Physics also [highlighted the result](https://www.inp.cnrs.fr/en/cnrsinfo/ultra-fast-spin-accumulations-make-it-possible-reverse-magnetisation-magnetic-materials).
+This work was led by **Jon Gorchon** and **Harjinder Singh**, together with Junta Igarashi, Quentin Remy, Stéphane Mangin, Michel Hehn and Gregory Malinowski, from my time at **Institut Jean Lamour** in Nancy. The CNRS Institute of Physics also [highlighted the result](https://www.inp.cnrs.fr/en/cnrsinfo/ultra-fast-spin-accumulations-make-it-possible-reverse-magnetisation-magnetic-materials).
 
 ---
 

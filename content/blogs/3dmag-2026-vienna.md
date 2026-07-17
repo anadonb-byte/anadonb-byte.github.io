@@ -9,12 +9,11 @@ tags:
   - TU Wien
 image: /images/news/3dmag-2026.jpg
 description: "3DMAG 2026 brought the 3D nanomagnetism community to TU Wien. I was part of the local organising team."
+summary: "The 1st International Symposium on Three-Dimensional Nanomagnetism took place in Vienna from 13 to 17 July 2026. I took part as a member of the local organising team at TU Wien."
 toc: false
 ---
 
-The **1st International Symposium on Three-Dimensional Nanomagnetism (3DMAG 2026)** took place from **13 to 17 July 2026** at the Freihaus building of **TU Wien**, in Vienna. I took part as a member of the **local organising team**, hosted by the 3DNANO group at the Institute of Applied Physics, with Prof. **Amalio Fernández-Pacheco** as conference chair.
-
-![The 3DMAG 2026 organising team at the closing session](/images/news/3dmag-2026.jpg)
+The **1st International Symposium on Three-Dimensional Nanomagnetism (3DMAG 2026)** took place from **13 to 17 July 2026** at the Freihaus building of **TU Wien**, in Vienna. I took part as a member of the **local organising team**, hosted by the 3DNANO group at the Institute of Applied Physics, with Prof. **Amalio Fernández-Pacheco** as conference chair. The photo above shows the organising team at the closing session.
 
 ## Why a symposium on 3D nanomagnetism
 

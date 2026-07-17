@@ -286,7 +286,7 @@ params:
       count: 3
       title: "Recent News"
       enable: true
-      disableFeaturedImage: false
+      disableFeaturedImage: true
     socialNetworks:
       website: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
 
