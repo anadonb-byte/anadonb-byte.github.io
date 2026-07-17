@@ -25,8 +25,8 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Blog
-      title: Blog posts
+      name: News
+      title: News and updates
       url: /blogs
       weight: 1
 
@@ -170,12 +170,12 @@ params:
     items:
       - title: "Ultrafast Spin Accumulations Drive Magnetization Reversal in Multilayers"
         image: /images/pubs/prl25.png
-        content: "H. Singh, <strong>A. Anadón</strong>, et al. — Single-shot magnetization reversal in multilayers driven by ultrafast spin accumulation, a fast and energy-efficient switching pathway."
+        content: "H. Singh, <strong>A. Anadón</strong>, et al. — Magneto-optics reveals the spin accumulation driving all-optical switching: the free layer's final state is set by the reference layer's ultrafast dynamics."
         badges:
-          - "Phys. Rev. Lett. (2025)"
+          - "Phys. Rev. Lett. 136, 056701 (2026)"
         featured:
           name: "Read paper"
-          link: https://arxiv.org/abs/2508.19675
+          link: https://doi.org/10.1103/z2sz-2tdz
         links:
           - icon: fas fa-graduation-cap
             url: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
@@ -282,7 +282,11 @@ params:
 
   footer:
     recentPosts:
-      enable: false
+      path: "blogs"
+      count: 3
+      title: "Recent News"
+      enable: true
+      disableFeaturedImage: false
     socialNetworks:
       website: https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en
 
