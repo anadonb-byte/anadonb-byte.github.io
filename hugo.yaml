@@ -42,9 +42,6 @@ menus:
     - name: "Join"
       url: "/#join"
       weight: 50
-    - name: "CV"
-      pageRef: "/cv"
-      weight: 60
 
 params:
   description: "Alberto Anadón Barcelona, Ramón y Cajal Fellow at INMA (CSIC – Universidad de Zaragoza). Spintronics, ultrafast magnetism and 3D nanomagnetism."

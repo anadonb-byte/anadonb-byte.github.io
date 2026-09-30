@@ -10,14 +10,11 @@ publicado en <https://anadonb-byte.github.io/> por GitHub Actions en cada `git p
 | Puesto, frase de la portada, bio, bloque «Join the group», texto de financiación UE | `data/profile.yaml` |
 | Líneas de investigación (texto, imágenes, barra de escala) | `data/research.yaml` |
 | Publicaciones seleccionadas (en el orden en que salen) | `data/publications.yaml` |
-| Trayectoria y formación | `data/career.yaml` |
+| Trayectoria (la formación está guardada pero no se muestra) | `data/career.yaml` |
 | Financiación, premios y servicio | `data/awards.yaml` |
 | Noticias | `content/blogs/*.md` |
 | Menú, descripción del sitio, imagen para redes | `hugo.yaml` |
 | Colores y tipografía | variables al principio de `assets/css/main.css` |
-
-La página `/cv/` se genera sola a partir de los mismos ficheros de `data/`, y el botón
-«Download PDF» la imprime en A4.
 
 ## Añadir una noticia
 

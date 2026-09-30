@@ -29,6 +29,7 @@ positions:
     url: "https://www.unizar.es/"
     note: "With M. R. Ibarra and M. H. Aguirre."
 
+# Formación: ahora mismo no se muestra en la web (se quitó la página /cv/); se conserva por si vuelve.
 education:
   - year: "2017"
     degree: "PhD in Physics"

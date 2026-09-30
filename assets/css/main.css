@@ -360,42 +360,18 @@ figcaption{margin-top:12px;font-size:.87rem;line-height:1.5;color:var(--ink-3);m
 .post-row p{margin:0;color:var(--ink-2)}
 @media (max-width:700px){.post-row{grid-template-columns:1fr;gap:16px}}
 
-/* ---------- CV ---------- */
-.cv{padding-block:clamp(40px,6vw,72px) var(--section-y)}
-.cv-wrap{max-width:880px;margin-inline:auto}
-.cv-header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;padding-bottom:28px;border-bottom:2px solid var(--ink)}
-.cv-header h1{font-size:clamp(2.2rem,4.5vw,3rem);letter-spacing:-.02em}
-.cv-header .role{margin:10px 0 0;color:var(--ink-2);font-size:1.08rem}
-.cv-contact{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:.92rem;color:var(--ink-3)}
-.cv-section{margin-top:40px}
-.cv-section h2{font-family:var(--font-sans);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:6px}
-.cv-row{display:grid;grid-template-columns:128px minmax(0,1fr);gap:20px;padding:12px 0;border-bottom:1px solid var(--line);break-inside:avoid}
-.cv-row:last-child{border-bottom:0}
-.cv-when{font-size:.9rem;font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.cv-what strong{display:block;color:var(--ink)}
-.cv-what span{display:block;font-size:.93rem;color:var(--ink-2)}
-.cv-what .muted{color:var(--ink-3);font-size:.88rem}
-.cv-pubs{margin:14px 0 0;padding-left:1.4em}
-.cv-pubs li{padding:6px 0;font-size:.95rem;color:var(--ink-2);break-inside:avoid}
-.cv-pubs li::marker{color:var(--ink-3);font-variant-numeric:tabular-nums}
-.cv-pubs strong{color:var(--ink)}
-.cv-note{margin-top:14px;font-size:.9rem;color:var(--ink-3)}
-@media (max-width:620px){.cv-row{grid-template-columns:1fr;gap:4px}}
-
 /* ---------- 404 ---------- */
 .notfound{padding-block:clamp(80px,14vw,160px);text-align:center}
 .notfound h1{font-size:clamp(2.4rem,6vw,4rem)}
 .notfound p{color:var(--ink-2);margin:16px auto 32px;max-width:40ch}
 
-/* ---------- Print (sobre todo para /cv/) ---------- */
+/* ---------- Print ---------- */
 @media print{
   @page{size:A4;margin:16mm 16mm 18mm}
   :root{--ink:#000;--ink-2:#222;--ink-3:#555;--line:#ccc;--accent-ink:#00506a;--bg:#fff;--bg-alt:#fff}
   html{font-size:10pt}
   body{background:#fff;color:#000}
   .site-header,.site-footer,.skip-link,.no-print,.theme-toggle{display:none!important}
-  .cv,.article{padding:0}
+  .article{padding:0}
   a{color:inherit;text-decoration:none}
-  .cv-section{margin-top:18pt}
-  .cv-row{padding:5pt 0}
 }

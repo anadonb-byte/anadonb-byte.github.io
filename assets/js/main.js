@@ -64,7 +64,4 @@
     update();
   }
 
-  // Botón «Download PDF» del CV
-  var printBtn = document.querySelector('[data-print]');
-  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
 })();
