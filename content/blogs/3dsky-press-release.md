@@ -22,10 +22,9 @@ The headline asks a simple question: computers, phones and data centres waste an
 ## What the press release covers
 
 - **Skyrmions as information carriers.** Magnetic skyrmions are tiny, stable whirls of magnetisation, thousands of times smaller than the width of a hair. 3D-Sky studied how temperature changes and thermal gradients generate forces that act on them.
-- **Skyrmions on demand.** One of the highlighted results is that a single heat pulse, delivered by microheaters integrated into the device in collaboration with the Universidad Autónoma de Madrid, breaks magnetic domains into isolated, stable skyrmions.
 - **Going three-dimensional.** Using focused electron beam induced deposition (FEBID), a form of 3D printing at the nanoscale, we fabricated ramps, horseshoes and helices in which geometry itself becomes a knob to control both heat flow and magnetism.
 - **A collaboration network.** The project was developed with Amalio Fernández-Pacheco's group at TU Wien, under the supervision of Cristina Bran (CSIC), and strengthened links with UAM, ICMM-CSIC, CUNEF Universidad, the ALBA Synchrotron and the Institut Jean Lamour.
-- **What comes next.** Since 1 July 2026 I continue this line at INMA as a Ramón y Cajal fellow. The next step is to take the thermal experiments into fully three-dimensional structures, such as the horseshoe nanostructures already fabricated, and to pin down which mechanisms let temperature drive skyrmion motion.
+- **What comes next.** Since 1 July 2026 I continue this line at INMA as a Ramón y Cajal fellow. The next step is to take the thermal experiments into fully three-dimensional structures, such as the horseshoe nanostructures already fabricated, and to understand how temperature can be used to move skyrmions.
 
 ## Media coverage
 
