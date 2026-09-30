@@ -247,7 +247,7 @@ figcaption{margin-top:12px;font-size:.87rem;line-height:1.5;color:var(--ink-3);m
 .bio p{margin-bottom:1.1em}
 .bio strong{color:var(--ink)}
 .block-title{font-family:var(--font-sans);font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 18px}
-.timeline{list-style:none;margin:0 0 40px;padding:0;position:relative}
+.timeline{list-style:none;margin:0;padding:0;position:relative}
 .timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--line-strong)}
 .timeline li{position:relative;padding:0 0 22px 28px}
 .timeline li:last-child{padding-bottom:0}
@@ -259,11 +259,6 @@ figcaption{margin-top:12px;font-size:.87rem;line-height:1.5;color:var(--ink-3);m
 .tl-org a{color:inherit}
 .tl-org a:hover{color:var(--accent-ink)}
 .tl-note{display:block;font-size:.86rem;color:var(--ink-3);margin-top:2px}
-.edu{list-style:none;margin:0;padding:0}
-.edu li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:.93rem;color:var(--ink-2)}
-.edu li:first-child{border-top:0;padding-top:0}
-.edu .yr{font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.edu .deg{color:var(--ink);font-weight:500}
 .awards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px;list-style:none;margin:0;padding:0}
 .awards li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--line)}
 .awards .yr{font-size:.85rem;font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums;padding-top:2px}

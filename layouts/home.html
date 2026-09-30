@@ -137,12 +137,6 @@
         </li>
         {{- end }}
       </ol>
-      <h3 class="block-title">Education</h3>
-      <ul class="edu">
-        {{- range where hugo.Data.career.education "showOnHome" "ne" false }}
-        <li><span class="yr">{{ .year }}</span><span><span class="deg">{{ .degree }}</span>, {{ .org }}</span></li>
-        {{- end }}
-      </ul>
     </div>
   </div>
   <div class="container">

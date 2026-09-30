@@ -23,7 +23,7 @@ positions:
     url: "https://www.nanociencia.imdea.org/"
     note: "With P. Perna."
   - years: "2013 – 2017"
-    role: "PhD candidate"
+    role: "PhD"
     org: "Universidad de Zaragoza (INA)"
     place: "Zaragoza, Spain"
     url: "https://www.unizar.es/"
@@ -37,7 +37,6 @@ education:
   - year: "2017"
     degree: "MSc in Teacher Training (Physics and Chemistry)"
     org: "Universidad de Zaragoza"
-    showOnHome: false   # solo aparece en /cv/
   - year: "2013"
     degree: "MSc in Physics and Physical Technologies"
     org: "Universidad de Zaragoza"
