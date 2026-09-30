@@ -1,0 +1,33 @@
+{{- $p := hugo.Data.profile -}}
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">{{ $p.name }}</p>
+        <p>{{ $p.position }}</p>
+        <p><a href="{{ $p.institutionUrl }}">{{ $p.institution }}</a><br>{{ $p.institutionParent }}</p>
+        <p>{{ $p.location }}</p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:{{ $p.email }}">{{ partial "icon.html" "mail" }}{{ $p.email }}</a></li>
+          <li><a href="{{ $p.links.scholar }}" rel="me noopener" target="_blank">{{ partial "icon.html" "scholar" }}Google Scholar</a></li>
+          <li><a href="{{ $p.links.orcid }}" rel="me noopener" target="_blank">{{ partial "icon.html" "orcid" }}ORCID</a></li>
+          <li><a href="/blogs/index.xml">{{ partial "icon.html" "rss" }}News feed (RSS)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Funding</p>
+        <div class="funding">
+          {{ partial "icon.html" "eu-flag" }}
+          <p>{{ $p.funding.eu }} <a href="{{ $p.funding.cordis }}" target="_blank" rel="noopener">CORDIS</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ now.Year }} {{ $p.name }}</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>

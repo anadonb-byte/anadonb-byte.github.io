@@ -1,0 +1,43 @@
+{{ define "bodyClass" }}page-article{{ end }}
+{{ define "main" }}
+<article class="article">
+  <div class="container">
+    <header class="narrow">
+      {{- with .CurrentSection }}{{ if not .IsHome }}<a class="crumb" href="{{ .RelPermalink }}">{{ partial "icon.html" "arrow-left" }}{{ .Title }}</a>{{ end }}{{ end }}
+      <h1 class="article-title">{{ .Title }}</h1>
+      {{- with .Params.description }}<p class="article-dek">{{ . }}</p>{{ end }}
+      {{- if eq .Section "blogs" }}
+      <div class="article-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+        <span class="dot" aria-hidden="true"></span>
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      {{- end }}
+    </header>
+    {{- with .Params.image }}
+    <figure class="article-hero"><img src="{{ . }}" alt="{{ $.Params.imageAlt | default "" }}" decoding="async" fetchpriority="high"></figure>
+    {{- end }}
+    <div class="prose narrow">
+      {{ .Content }}
+    </div>
+    {{- if eq .Section "blogs" }}
+    <footer class="article-foot narrow">
+      {{- with .GetTerms "tags" }}
+      <ul class="tags" aria-label="Tags">
+        {{- range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+      </ul>
+      {{- end }}
+      {{- $newer := false }}{{ $older := false }}
+      {{- with .PrevInSection }}{{ if .Date.After $.Date }}{{ $newer = . }}{{ else }}{{ $older = . }}{{ end }}{{ end }}
+      {{- with .NextInSection }}{{ if .Date.After $.Date }}{{ $newer = . }}{{ else }}{{ $older = . }}{{ end }}{{ end }}
+      {{- if or $newer $older }}
+      <nav class="pager" aria-label="More news">
+        {{- with $older }}<a class="prev" href="{{ .RelPermalink }}"><small>← Older</small><span>{{ .Title }}</span></a>{{ end }}
+        {{- with $newer }}<a class="next" href="{{ .RelPermalink }}"><small>Newer →</small><span>{{ .Title }}</span></a>{{ end }}
+      </nav>
+      {{- end }}
+    </footer>
+    {{- end }}
+  </div>
+</article>
+{{ end }}

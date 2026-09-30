@@ -1,0 +1,12 @@
+{{- $doi := printf "https://doi.org/%s" .doi -}}
+{{- $me := "<strong>A. Anadón</strong>" -}}
+{{- if .corresponding }}{{ $me = print $me `<span class="corr" title="Corresponding author">*</span>` }}{{ end -}}
+<li class="pub">
+  <a class="pub-thumb" href="{{ $doi }}" tabindex="-1" aria-hidden="true"><img src="{{ .image }}" alt="" width="800" height="500" loading="lazy" decoding="async"></a>
+  <div>
+    <p class="pub-venue"><span><span class="journal">{{ .journal }}</span> <span class="vol">{{ .volume }}</span>, {{ .pages }} ({{ .year }})</span>{{ with .note }}<span class="badge">{{ . }}</span>{{ end }}</p>
+    <h3 class="pub-title"><a href="{{ $doi }}">{{ .title | safeHTML }}</a></h3>
+    <p class="pub-authors">{{ replace .authors "A. Anadón" $me | safeHTML }}</p>
+    <p class="pub-summary">{{ .summary }}</p>
+  </div>
+</li>

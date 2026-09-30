@@ -1,0 +1,12 @@
+{{ define "bodyClass" }}page-list{{ end }}
+{{ define "main" }}
+<div class="container">
+  <header class="list-head">
+    <p class="eyebrow">Tag</p>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <ol class="post-list">
+    {{- range .Pages }}{{ partial "post-row.html" . }}{{ end }}
+  </ol>
+</div>
+{{ end }}

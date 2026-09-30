@@ -1,0 +1,87 @@
+# Líneas de investigación. "current" salen grandes con imagen; "previous" como tarjetas.
+# "pubs" enlaza con las claves (key) de publications.yaml.
+intro: >-
+  I work on how spin and heat currents can create, move and switch magnetic textures in
+  nanoscale magnets, from ultrafast experiments on thin films to magnetic structures grown
+  directly in three dimensions.
+
+banner:
+  image: "/images/site/research-mumax.webp"
+  width: 1800
+  height: 600
+  alt: "Three-dimensional rendering of simulated magnetisation arrows in a thin magnetic strip, coloured from blue through white to red"
+  caption: >-
+    Micromagnetic simulation (mumax3) of the magnetisation in a thin magnetic strip,
+    rendered in Blender. Each arrow is the local magnetisation, coloured by its
+    out-of-plane component: red up, blue down, white in-plane.
+
+current:
+  - title: "Three-dimensional nanomagnetism"
+    image: "/images/site/research-3d-sheet.webp"
+    width: 1000
+    height: 800
+    alt: "Scanning electron micrograph of a free-standing curved magnetic sheet"
+    # Barra de escala medida sobre la barra de datos del SEM: 401,5 px/µm en un recorte de 1800 px
+    scalebar:
+      label: "1 µm"
+      width: 22.31
+    caption: "Free-standing curved sheet, a few tens of nanometres thick (SEM, 45° tilt)."
+    text: >-
+      With focused electron beam induced deposition (FEBID), a form of 3D printing at the
+      nanoscale, I grow magnetic nanostructures directly in three dimensions: ramps,
+      horseshoes, helices and free-standing curved sheets. In these geometries curvature
+      becomes a design parameter. It changes how the magnetisation arranges itself and how
+      heat flows through the structure, and the aim is to use it to stabilise and guide
+      skyrmions.
+    links:
+      - label: "3D-Sky on CORDIS"
+        url: "https://cordis.europa.eu/project/id/101108063"
+      - label: "3DMAG 2026, Vienna"
+        url: "/blogs/3dmag-2026-vienna/"
+
+  - title: "Heat-driven magnetism"
+    image: "/images/site/research-heaters.webp"
+    width: 816
+    height: 653
+    alt: "Optical micrograph of a device with meandering microheater tracks at its centre"
+    caption: "Device with integrated microheaters: the meandering tracks at the centre (optical micrograph)."
+    text: >-
+      Heat is usually a loss in electronics. I study how it can instead drive magnetism:
+      how heat pulses and thermal gradients, applied through microheaters integrated in the
+      devices, can write and move magnetic information, with skyrmions as one of the
+      targets. The line started with my PhD on the spin Seebeck effect, grew with the MSCA
+      project 3D-Sky, and I continue it as a Ramón y Cajal Fellow.
+    links:
+      - label: "3D-Sky in the news"
+        url: "/blogs/3dsky-press-release/"
+
+previous:
+  - title: "Ultrafast spintronics"
+    where: "Institut Jean Lamour, Nancy"
+    years: "2020–2024"
+    text: >-
+      Spin–orbit torque switching with current pulses down to a few picoseconds. We measured
+      the energy cost of magnetisation reversal over seven orders of magnitude in pulse
+      duration: it drops by more than an order of magnitude in the picosecond regime. With
+      ultrafast magneto-optics we then showed that spin accumulations drive all-optical
+      switching in multilayers.
+    pubs: [natnano25, prl26, prb25]
+
+  - title: "Spin–charge conversion in 2D systems"
+    where: "IMDEA Nanociencia, Madrid"
+    years: "2017–2020"
+    text: >-
+      Epitaxial graphene between a ferromagnet and a heavy metal as a way to engineer
+      spin–orbit effects at interfaces. A graphene monolayer inserted between Fe and Pt
+      increases spin-to-charge conversion 34-fold and makes it anisotropic; at graphene/cobalt
+      interfaces it induces perpendicular anisotropy and chiral Néel domain walls.
+    pubs: [advmat25, aplmat21, nanolett18]
+
+  - title: "Spin caloritronics"
+    where: "Universidad de Zaragoza"
+    years: "PhD, 2013–2017"
+    text: >-
+      Thermoelectric conversion based on the spin Seebeck effect: multilayers and spin-Hall
+      thermopiles that raise the output voltage and power, a patented spin Seebeck device,
+      and later thermal spin-current generation in multifunctional oxides.
+    pubs: [apl16, prapplied22]

@@ -1,0 +1,14 @@
+# Financiación, premios y servicio a la comunidad. "year" es opcional.
+items:
+  - year: "2026 –"
+    title: "Ramón y Cajal Fellowship"
+    detail: "Agencia Estatal de Investigación (Spain). Heat-induced skyrmion dynamics at INMA."
+  - year: "2024 – 2026"
+    title: "Marie Skłodowska-Curie Postdoctoral Fellowship"
+    detail: "Project 3D-Sky, Thermo-spin 3D Platform for Skyrmion motion. European Commission, grant agreement No 101108063."
+  - year: "2024 –"
+    title: "Guest Associate Editor, IEEE Access"
+  - title: "IEEE Seed Funding Grant, project HISTRA"
+    detail: "Spin–charge interconversion in epitaxial systems, Institut Jean Lamour."
+  - title: "Patent: spin Seebeck thermoelectric device"
+    detail: "With M. R. Ibarra, L. Morellón, M. H. Aguirre, R. Ramos, P. A. Algarabel and I. Lucas. Universidad de Zaragoza, Tohoku University and CSIC."

@@ -1,0 +1,8 @@
+<li class="post-row">
+  <div class="post-row-media">{{ with .Params.image }}<img src="{{ . }}" alt="" width="800" height="500" loading="lazy" decoding="async">{{ end }}</div>
+  <div>
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary | plainify }}</p>
+  </div>
+</li>

@@ -1,0 +1,10 @@
+<article class="post-card">
+  {{- with .Params.image }}
+  <div class="post-card-media"><img src="{{ . }}" alt="" width="800" height="500" loading="lazy" decoding="async"></div>
+  {{- end }}
+  <div class="post-card-body">
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary | plainify }}</p>
+  </div>
+</article>

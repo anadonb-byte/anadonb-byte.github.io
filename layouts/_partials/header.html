@@ -1,0 +1,17 @@
+{{- $p := hugo.Data.profile -}}
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="{{ "/" | relURL }}">{{ partial "icon.html" "mark" }}<span>{{ $p.shortName }}</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-list" id="nav-list" data-nav-list>
+        {{- $page := . }}
+        {{- range site.Menus.main }}
+        {{- $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+        <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark mode">{{ partial "icon.html" "moon" }}{{ partial "icon.html" "sun" }}</button>
+    <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-controls="nav-list" aria-expanded="false"><span class="sr-only">Menu</span>{{ partial "icon.html" "menu" }}</button>
+  </div>
+</header>

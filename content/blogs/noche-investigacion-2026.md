@@ -1,5 +1,6 @@
 ---
 title: "La Noche de la Investigación 2026: magnets in three dimensions, in eight minutes"
+shortTitle: "La Noche de la Investigación 2026"
 date: 2026-09-25T20:00:00+02:00
 draft: false
 author: "Alberto Anadón"
@@ -30,11 +31,10 @@ The talk had to get from everyday magnets to 3D nanomagnetism without a single e
 
 <figure>
   <video controls muted loop playsinline preload="none"
-         poster="/images/news/febid-poster.jpg"
-         style="width:100%;height:auto;border-radius:4px;">
+         poster="/images/news/febid-poster.jpg" width="1920" height="1080">
     <source src="/videos/febid-3d-printing.mp4" type="video/mp4">
   </video>
-  <figcaption style="font-size:0.9em;opacity:0.75;margin-top:0.6em;">
+  <figcaption>
     The animation I used on stage, rendered in Blender for this talk. A gas injection needle feeds precursor molecules onto a clean substrate; where the electron beam points, and only there, metal stays behind and a nanohelix grows in mid-air. The needle is fixed and the beam is what moves, which is how it works in the microscope.
   </figcaption>
 </figure>

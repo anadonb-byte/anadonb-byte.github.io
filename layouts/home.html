@@ -1,0 +1,181 @@
+{{ define "bodyClass" }}page-home{{ end }}
+{{ define "main" }}
+{{- $p := hugo.Data.profile -}}
+{{- $r := hugo.Data.research -}}
+{{- $posts := (where site.RegularPages "Section" "blogs").ByDate.Reverse -}}
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      {{- with index $posts 0 }}
+      <a class="latest" href="{{ .RelPermalink }}"><span class="latest-tag">Latest</span><span class="latest-text">{{ .Params.shortTitle | default .Title }}</span>{{ partial "icon.html" "arrow-right" }}</a>
+      {{- end }}
+      <h1>{{ $p.name }}</h1>
+      <p class="hero-role">{{ $p.position }} · <a href="{{ $p.institutionUrl }}">{{ $p.institutionShort }}</a>, {{ $p.institutionParent }}</p>
+      <p class="hero-statement">{{ $p.statement }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">Research {{ partial "icon.html" "arrow-right" }}</a>
+        <a class="btn btn-ghost" href="#publications">Publications</a>
+        <div class="hero-links">
+          <a class="icon-btn" href="mailto:{{ $p.email }}" aria-label="Email">{{ partial "icon.html" "mail" }}</a>
+          <a class="icon-btn" href="{{ $p.links.scholar }}" aria-label="Google Scholar" rel="me noopener" target="_blank">{{ partial "icon.html" "scholar" }}</a>
+          <a class="icon-btn" href="{{ $p.links.orcid }}" aria-label="ORCID" rel="me noopener" target="_blank">{{ partial "icon.html" "orcid" }}</a>
+          <a class="icon-btn" href="/cv/" aria-label="Curriculum vitae">{{ partial "icon.html" "cv" }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="portrait">
+      <picture>
+        <source srcset="{{ $p.portrait.webp }}" type="image/webp">
+        <img src="{{ $p.portrait.jpg }}" alt="{{ $p.portrait.alt }}" width="{{ $p.portrait.width }}" height="{{ $p.portrait.height }}" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section section-alt">
+  <div class="container">
+    <header class="section-head">
+      <h2>Research</h2>
+      <p class="lead">{{ $r.intro }}</p>
+    </header>
+    <h3 class="subhead">Current work</h3>
+    <div class="features">
+      {{- range $r.current }}
+      <article class="feature">
+        <figure class="feature-media">
+          <div class="media-frame">
+            <img src="{{ .image }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy" decoding="async">
+            {{- with .scalebar }}
+            <span class="scalebar" style="--w: {{ .width | safeCSS }}%" aria-label="Scale bar, {{ .label }}"><span>{{ .label }}</span></span>
+            {{- end }}
+          </div>
+          <figcaption>{{ .caption }}</figcaption>
+        </figure>
+        <div class="feature-body">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          {{- with .links }}
+          <ul class="feature-links">
+            {{- range . }}
+            <li><a class="link-arrow" href="{{ .url }}">{{ .label }}{{ partial "icon.html" "arrow-right" }}</a></li>
+            {{- end }}
+          </ul>
+          {{- end }}
+        </div>
+      </article>
+      {{- end }}
+    </div>
+    {{- with $r.banner }}
+    <figure class="banner">
+      <img src="{{ .image }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy" decoding="async">
+      <figcaption>{{ .caption }}</figcaption>
+    </figure>
+    {{- end }}
+    <h3 class="subhead">Earlier work</h3>
+    <div class="cards-3">
+      {{- range $r.previous }}
+      <article class="card">
+        <p class="card-meta">{{ .where }}{{ with .years }} · <span class="nowrap">{{ . }}</span>{{ end }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <ul class="refs">
+          {{- range .pubs }}{{ with index (where hugo.Data.publications.items "key" .) 0 }}
+          <li><a href="https://doi.org/{{ .doi }}" title="{{ .title | plainify }}">{{ .journal }} {{ .year }}{{ partial "icon.html" "arrow-up-right" }}</a></li>
+          {{- end }}{{ end }}
+        </ul>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="container">
+    <header class="section-head">
+      <h2>Selected publications</h2>
+      <a class="link-arrow" href="{{ $p.links.scholar }}" target="_blank" rel="noopener">Full list on Google Scholar{{ partial "icon.html" "arrow-up-right" }}</a>
+    </header>
+    <ol class="pubs">
+      {{- range hugo.Data.publications.items }}{{ partial "pub.html" . }}{{ end }}
+    </ol>
+    <div class="pubs-foot">
+      <span><span class="corr" style="color:var(--accent-ink);font-weight:700">*</span> Corresponding author</span>
+      <span class="links"><a href="{{ $p.links.orcid }}" target="_blank" rel="noopener">ORCID</a><a href="/cv/">CV</a></span>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="section section-alt">
+  <div class="container">
+    <header class="section-head">
+      <h2>News</h2>
+      <a class="link-arrow" href="/blogs/">All news{{ partial "icon.html" "arrow-right" }}</a>
+    </header>
+    <div class="news-grid">
+      {{- range first 3 $posts }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div>
+      <header class="section-head"><h2>About</h2></header>
+      <div class="bio">{{ $p.bio | markdownify }}</div>
+    </div>
+    <div>
+      <h3 class="block-title">Career</h3>
+      <ol class="timeline">
+        {{- range hugo.Data.career.positions }}
+        {{- $pos := . }}
+        <li>
+          <span class="tl-years">{{ .years }}</span>
+          <span class="tl-role">{{ .role }}</span>
+          <span class="tl-org">{{ with $pos.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $pos.org }}</a>{{ else }}{{ $pos.org }}{{ end }} · {{ .place }}</span>
+          {{- with .note }}<span class="tl-note">{{ . }}</span>{{ end }}
+        </li>
+        {{- end }}
+      </ol>
+      <h3 class="block-title">Education</h3>
+      <ul class="edu">
+        {{- range where hugo.Data.career.education "showOnHome" "ne" false }}
+        <li><span class="yr">{{ .year }}</span><span><span class="deg">{{ .degree }}</span>, {{ .org }}</span></li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="subhead">Funding, awards and service</h3>
+    <ul class="awards">
+      {{- range hugo.Data.awards.items }}
+      <li><span class="yr">{{ .year }}</span><span><span class="ttl">{{ .title }}</span>{{ with .detail }}<span class="det">{{ . }}</span>{{ end }}</span></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
+<section id="join" class="section" style="padding-top:0">
+  <div class="container">
+    <div class="join">
+      <div>
+        <h2>Join the group</h2>
+        <p class="lead">{{ $p.join.intro }}</p>
+        <ul class="join-items">
+          {{- range $p.join.items }}
+          <li>{{ partial "icon.html" "check" }}<div><strong>{{ .title }}</strong><span>{{ .text }}</span></div></li>
+          {{- end }}
+        </ul>
+        <div class="join-cta">
+          <a class="btn btn-primary" href="mailto:{{ $p.email }}?subject=Joining%20the%20group">{{ partial "icon.html" "mail" }}Get in touch</a>
+          <p>{{ $p.join.cta }}</p>
+        </div>
+      </div>
+      <figure class="join-media">
+        <img src="{{ $p.join.image }}" alt="{{ $p.join.imageAlt }}" width="{{ $p.join.imageWidth }}" height="{{ $p.join.imageHeight }}" loading="lazy" decoding="async">
+        <figcaption>{{ $p.join.imageCaption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+{{ end }}

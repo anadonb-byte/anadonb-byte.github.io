@@ -1,0 +1,18 @@
+{{ define "bodyClass" }}page-list{{ end }}
+{{ define "main" }}
+<div class="container">
+  <header class="list-head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <ol class="post-list">
+    {{- range .Paginator.Pages }}{{ partial "post-row.html" . }}{{ end }}
+  </ol>
+  {{- with .Paginator }}{{ if gt .TotalPages 1 }}
+  <nav class="pager" aria-label="Pages" style="margin-bottom:var(--section-y)">
+    {{- if .HasPrev }}<a class="prev" href="{{ .Prev.URL }}"><small>←</small><span>Newer</span></a>{{ end }}
+    {{- if .HasNext }}<a class="next" href="{{ .Next.URL }}"><small>→</small><span>Older</span></a>{{ end }}
+  </nav>
+  {{- end }}{{ end }}
+</div>
+{{ end }}

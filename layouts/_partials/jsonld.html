@@ -1,0 +1,14 @@
+{{- $p := hugo.Data.profile -}}
+{{- $d := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $p.name
+  "jobTitle" $p.position
+  "url" ("/" | absURL)
+  "email" (printf "mailto:%s" $p.email)
+  "image" ($p.portrait.jpg | absURL)
+  "affiliation" (dict "@type" "Organization" "name" (printf "%s (%s), %s" $p.institution $p.institutionShort $p.institutionParent) "url" $p.institutionUrl)
+  "sameAs" (slice $p.links.scholar $p.links.orcid)
+  "knowsAbout" (slice "Spintronics" "3D nanomagnetism" "Magnetic skyrmions" "Spin caloritronics" "Ultrafast magnetism")
+-}}
+<script type="application/ld+json">{{ $d | jsonify | safeJS }}</script>

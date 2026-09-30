@@ -1,0 +1,11 @@
+{{ define "bodyClass" }}page-list{{ end }}
+{{ define "main" }}
+<div class="container">
+  <header class="list-head"><h1>{{ .Title }}</h1></header>
+  <ul class="tags" style="margin-bottom:var(--section-y)">
+    {{- range .Data.Terms.Alphabetical }}
+    <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span style="color:var(--ink-3)">{{ .Count }}</span></a></li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

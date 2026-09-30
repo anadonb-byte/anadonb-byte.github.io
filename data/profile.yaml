@@ -1,0 +1,56 @@
+# Datos personales y textos de la portada.
+# Los campos con markdown (bio, statement) admiten **negritas** y [enlaces](https://...).
+name: "Alberto Anadón Barcelona"
+shortName: "Alberto Anadón"
+position: "Ramón y Cajal Fellow"
+institution: "Instituto de Nanociencia y Materiales de Aragón"
+institutionShort: "INMA"
+institutionParent: "CSIC – Universidad de Zaragoza"
+institutionUrl: "https://inma.unizar-csic.es/"
+location: "Zaragoza, Spain"
+email: "anadonb@unizar.es"
+
+statement: >-
+  Experimental physicist working on spintronics and three-dimensional nanomagnetism.
+  I use heat, spin currents and ultrafast optics to write and move magnetic information
+  in thin films and 3D nanostructures.
+
+portrait:
+  webp: "/images/site/portrait.webp"
+  jpg: "/images/site/portrait.jpg"
+  width: 800
+  height: 1000
+  alt: "Alberto Anadón in the lab, next to a thin-film deposition system"
+
+links:
+  scholar: "https://scholar.google.com/citations?user=0vWi73wAAAAJ&hl=en"
+  orcid: "https://orcid.org/0000-0001-5939-6415"
+
+bio: |-
+  I am an experimental physicist and a Ramón y Cajal Fellow at the Instituto de Nanociencia y Materiales de Aragón (INMA), a joint institute of CSIC and the Universidad de Zaragoza. My research sits at the interface of **spintronics**, **ultrafast magnetism** and **3D nanomagnetism**: how spin and heat currents are generated and controlled in nanoscale magnetic materials, and how they can be used to write and move magnetic information.
+
+  I did my PhD in Zaragoza on the spin Seebeck effect. I then worked as a postdoctoral researcher at IMDEA Nanociencia in Madrid, on spin–orbitronics in graphene-based heterostructures, and at the Institut Jean Lamour in Nancy, on picosecond spin–orbit torques. Between 2024 and 2026 I led the Marie Skłodowska-Curie project **3D-Sky** at INMA, in collaboration with Amalio Fernández-Pacheco's group at TU Wien. Since July 2026 I continue this line as a Ramón y Cajal Fellow.
+
+join:
+  intro: >-
+    I am building a group at INMA on three-dimensional nanomagnetism and heat-driven
+    spin textures, and I am always glad to hear from motivated students and researchers.
+  items:
+    - title: "Bachelor's and Master's theses"
+      text: "TFG and TFM projects at the Universidad de Zaragoza."
+    - title: "PhD"
+      text: "Through FPI, FPU and other predoctoral calls. Get in touch early: applications are usually prepared months in advance."
+    - title: "Postdocs"
+      text: "I am happy to support applications to Marie Skłodowska-Curie Postdoctoral Fellowships, Juan de la Cierva and similar schemes."
+  cta: "Send me an email with a short CV and a few lines on what interests you."
+  image: "/images/site/lab-dualbeam.webp"
+  imageWidth: 1100
+  imageHeight: 880
+  imageAlt: "Dual-beam electron microscope used for 3D nanoprinting in the INMA clean room"
+  imageCaption: "Dual-beam microscope used for FEBID in the INMA clean room."
+
+funding:
+  eu: >-
+    The 3D-Sky project has received funding from the European Union's Horizon Europe research
+    and innovation programme under the Marie Skłodowska-Curie grant agreement No 101108063.
+  cordis: "https://cordis.europa.eu/project/id/101108063"

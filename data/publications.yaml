@@ -1,0 +1,95 @@
+# Publicaciones seleccionadas, en el orden en que se muestran.
+# Metadatos comprobados contra Crossref (30-sep-2026). "A. Anadón" se resalta solo en la web.
+# corresponding: true añade el asterisco de autor de correspondencia.
+items:
+  - key: prl26
+    year: 2026
+    title: "Ultrafast spin accumulations drive magnetization reversal in multilayers"
+    authors: "H. Singh, A. Anadón, J. Igarashi, Q. Remy, S. Mangin, M. Hehn, J. Gorchon, G. Malinowski"
+    journal: "Phys. Rev. Lett."
+    volume: "136"
+    pages: "056701"
+    doi: "10.1103/z2sz-2tdz"
+    image: "/images/pubs/prl25.png"
+    summary: "Magneto-optics reveals the spin accumulation driving all-optical switching: the free layer's final state is set by the reference layer's ultrafast dynamics."
+
+  - key: prb25
+    year: 2025
+    title: "Large spin accumulation signals in ultrafast magneto-optical experiments"
+    authors: "A. Anadón, H. Singh, E. Díaz, Y. Le-Guen, J. Hohlfeld, R. B. Wilson, G. Malinowski, M. Hehn, J. Gorchon"
+    journal: "Phys. Rev. B"
+    volume: "112"
+    pages: "104437"
+    doi: "10.1103/5qnm-zgjt"
+    image: "/images/pubs/spinacc.png"
+    note: "Editors' Suggestion"
+    summary: "Unusually large spin-accumulation signals detected through ultrafast magneto-optics, far exceeding stationary spintronic regimes."
+
+  - key: advmat25
+    year: 2025
+    title: "Giant and anisotropic enhancement of spin-charge conversion in graphene-based quantum system"
+    authors: "A. Anadón, A. Pezo, I. Arnay, R. Guerrero, A. Gudín, …, P. Perna, J.-C. Rojas-Sánchez"
+    corresponding: true
+    journal: "Adv. Mater."
+    volume: "37"
+    pages: "2418541"
+    doi: "10.1002/adma.202418541"
+    image: "/images/pubs/advmat.png"
+    summary: "A 34-fold increase in spin-to-charge conversion when an epitaxial graphene monolayer is inserted between Fe and Pt."
+
+  - key: natnano25
+    year: 2025
+    title: "Energy-efficient picosecond spin–orbit torque magnetization switching in ferro- and ferrimagnetic films"
+    authors: "E. Díaz, A. Anadón, P. Olleros-Rodríguez, H. Singh, H. Damas, P. Perna, M. Morassi, A. Lemaître, M. Hehn, J. Gorchon"
+    journal: "Nat. Nanotechnol."
+    volume: "20"
+    pages: "36–42"
+    doi: "10.1038/s41565-024-01788-x"
+    image: "/images/pubs/natnano.png"
+    summary: "The energy cost of spin–orbit torque switching, measured over seven orders of magnitude in pulse duration, drops by more than an order of magnitude in the picosecond regime."
+
+  - key: prapplied22
+    year: 2022
+    title: "Thermal spin-current generation in the multifunctional ferrimagnet Ga<sub>0.6</sub>Fe<sub>1.4</sub>O<sub>3</sub>"
+    authors: "A. Anadón, E. Martin, S. Homkar, B. Meunier, …, N. Viart, J.-C. Rojas-Sánchez"
+    corresponding: true
+    journal: "Phys. Rev. Applied"
+    volume: "18"
+    pages: "054087"
+    doi: "10.1103/PhysRevApplied.18.054087"
+    image: "/images/pubs/prapplied.png"
+    summary: "A multifunctional oxide with spin-current generation comparable to YIG."
+
+  - key: aplmat21
+    year: 2021
+    title: "Engineering the spin conversion in graphene monolayer epitaxial structures"
+    authors: "A. Anadón, A. Gudín, R. Guerrero, I. Arnay, …, J.-C. Rojas-Sánchez, P. Perna"
+    corresponding: true
+    journal: "APL Mater."
+    volume: "9"
+    pages: "061113"
+    doi: "10.1063/5.0048612"
+    image: "/images/pubs/aplmat.png"
+    summary: "Graphene retains the spin current injected from a ferromagnet into a heavy metal, opening a route to control it."
+
+  - key: nanolett18
+    year: 2018
+    title: "Unraveling Dzyaloshinskii–Moriya interaction and chiral nature of graphene/cobalt interface"
+    authors: "F. Ajejas, A. Gudín, R. Guerrero, A. Anadón, …, R. Miranda, P. Perna"
+    journal: "Nano Lett."
+    volume: "18"
+    pages: "5364–5372"
+    doi: "10.1021/acs.nanolett.8b00878"
+    image: "/images/pubs/nanolett.png"
+    summary: "Graphene-induced perpendicular anisotropy and room-temperature chiral Néel domain walls."
+
+  - key: apl16
+    year: 2016
+    title: "Thermoelectric performance of spin Seebeck effect in Fe<sub>3</sub>O<sub>4</sub>/Pt-based thin film heterostructures"
+    authors: "R. Ramos, A. Anadón, I. Lucas, K. Uchida, P. A. Algarabel, L. Morellón, M. H. Aguirre, E. Saitoh, M. R. Ibarra"
+    journal: "APL Mater."
+    volume: "4"
+    pages: "104802"
+    doi: "10.1063/1.4950994"
+    image: "/images/pubs/apl16.png"
+    summary: "Spin Seebeck multilayers and spin-Hall thermopiles that raise the thermoelectric voltage and output power."

@@ -8,14 +8,13 @@ tags:
   - ultrafast magnetism
   - spintronics
 image: /images/pubs/prl25.png
+imageAlt: "Time-resolved magneto-optical measurements of spin accumulation in magnetic multilayers"
 description: "Our work on how ultrafast spin accumulation controls all-optical switching in magnetic multilayers is out in Physical Review Letters."
 summary: "Our paper on how ultrafast spin accumulation drives all-optical switching in magnetic multilayers has been published in Physical Review Letters 136, 056701 (2026)."
 toc: false
 ---
 
 Our paper **"Ultrafast Spin Accumulations Drive Magnetization Reversal in Multilayers"** has been published in **Physical Review Letters 136, 056701 (2026)**.
-
-![Time-resolved magneto-optical measurements of spin accumulation in magnetic multilayers](/images/pubs/prl25.png)
 
 ## What the paper is about
 
