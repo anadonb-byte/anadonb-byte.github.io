@@ -7,6 +7,11 @@
         <p>{{ $p.position }}</p>
         <p><a href="{{ $p.institutionUrl }}">{{ $p.institution }}</a><br>{{ $p.institutionParent }}</p>
         <p>{{ $p.location }}</p>
+        <div class="footer-logos">
+          {{- range $p.affiliationLogos }}
+          <img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" style="height:{{ .h }}px" loading="lazy" decoding="async">
+          {{- end }}
+        </div>
       </div>
       <div>
         <p class="footer-title">Contact</p>
@@ -19,10 +24,16 @@
       </div>
       <div>
         <p class="footer-title">Funding</p>
-        <div class="funding">
-          {{ partial "icon.html" "eu-flag" }}
+        <div class="funder">
+          <div class="eu-lockup">{{ partial "icon.html" "eu-flag" }}<span>Funded by<br>the European Union</span></div>
           <p>{{ $p.funding.eu }} <a href="{{ $p.funding.cordis }}" target="_blank" rel="noopener">CORDIS</a></p>
         </div>
+        {{- with $p.funding.aei }}
+        <div class="funder">
+          <img class="funder-logo" src="{{ .logo }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy" decoding="async">
+          <p>{{ .text }}</p>
+        </div>
+        {{- end }}
       </div>
     </div>
     <div class="footer-bottom">

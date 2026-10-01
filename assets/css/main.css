@@ -293,9 +293,15 @@ figcaption{margin-top:12px;font-size:.87rem;line-height:1.5;color:var(--ink-3);m
 .footer-links{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .footer-links a{display:inline-flex;align-items:center;gap:10px}
 .footer-links .icon{width:17px;height:17px;opacity:.85}
-.funding{display:grid;grid-template-columns:54px minmax(0,1fr);gap:14px;align-items:start}
-.funding svg{width:54px;height:36px;border-radius:2px}
-.funding p{font-size:.84rem;line-height:1.55}
+.footer-logos{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:24px}
+.footer-logos img{width:auto;max-width:100%;opacity:.95}
+.funder{margin-bottom:22px}
+.funder:last-child{margin-bottom:0}
+.funder p{font-size:.84rem;line-height:1.55;margin:10px 0 0}
+/* Emblema UE: rectángulo sin modificar; sobre fondo oscuro, borde blanco de 1/25 de la altura */
+.eu-lockup{display:flex;align-items:center;gap:12px;color:#fff;font:400 13.5px/1.18 Arial,"Helvetica Neue",Helvetica,"Liberation Sans",sans-serif}
+.eu-lockup svg{flex:none;width:54px;height:36px;box-shadow:0 0 0 1.44px #fff}
+.funder-logo{height:52px;width:auto}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:.84rem;color:var(--footer-muted)}
 .footer-bottom a{color:var(--footer-muted)}
 @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>:first-child{grid-column:1/-1}}

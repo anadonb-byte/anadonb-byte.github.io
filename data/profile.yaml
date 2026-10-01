@@ -54,3 +54,22 @@ funding:
     The 3D-Sky project has received funding from the European Union's Horizon Europe research
     and innovation programme under the Marie Skłodowska-Curie grant agreement No 101108063.
   cordis: "https://cordis.europa.eu/project/id/101108063"
+  aei:
+    logo: "/images/logos/aei-white.png"   # versión monocroma en blanco del logo oficial de aei.gob.es
+    width: 239
+    height: 120
+    alt: "Agencia Estatal de Investigación"
+    text: "Ramón y Cajal Fellowship."
+
+# Logos de afiliación en el pie (versiones en blanco, para fondo oscuro). h = altura en px.
+affiliationLogos:
+  - src: "/images/logos/inma-white.png"
+    alt: "INMA, Instituto de Nanociencia y Materiales de Aragón"
+    width: 428
+    height: 217
+    h: 54
+  - src: "/images/logos/csic-unizar-white.png"
+    alt: "CSIC and Universidad de Zaragoza"
+    width: 1057
+    height: 128
+    h: 30

@@ -7,7 +7,7 @@ publicado en <https://anadonb-byte.github.io/> por GitHub Actions en cada `git p
 
 | Qué quieres cambiar | Dónde |
 |---|---|
-| Puesto, frase de la portada, bio, bloque «Join the group», texto de financiación UE | `data/profile.yaml` |
+| Puesto, frase de la portada, bio, bloque «Join the group», financiación (UE, AEI) y logos del pie | `data/profile.yaml` (imágenes en `static/images/logos/`) |
 | Líneas de investigación (texto, imágenes, barra de escala) | `data/research.yaml` |
 | Publicaciones seleccionadas (en el orden en que salen) | `data/publications.yaml` |
 | Trayectoria (la formación está guardada pero no se muestra) | `data/career.yaml` |
