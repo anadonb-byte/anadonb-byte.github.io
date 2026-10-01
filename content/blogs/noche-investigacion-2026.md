@@ -39,19 +39,11 @@ The talk had to get from everyday magnets to 3D nanomagnetism without a single e
   </figcaption>
 </figure>
 
-## Deciding what to leave out
-
-The hardest part of preparing eight minutes was not the science, it was the subtraction. Out went every equation, the axis labels, the acronyms — DMI, PMA, anisotropy — and the word *spintronics* unless I translated it on the spot.
-
-What stayed in were the numbers that keep the story honest. The micrograph on my slides is from a 2008 disk with a track pitch of about 180 nm; a current disk is closer to 60 nm, so the comparison with a 20 nm skyrmion gives a factor of 2, not the factor of 30 you get against 2008 technology. I put both on the slide. The same applies to timescales: the flat devices are already on sale as MRAM, the 3D ones are not, and I do not have a date for when they will be. This is basic research funded with European public money, and being clear about that is part of the answer to "what is it for?", not a caveat to it.
-
-The FEBID animation and the 3D renders on the slides were made in Blender specifically for this talk, so there was nothing on screen I could not explain.
-
-![On stage at CaixaForum Zaragoza](/images/news/noche-investigacion-2026-charla.jpg)
-
 ## The event
 
 The European Researchers' Night is itself a Marie Skłodowska-Curie action, which closed a loop for me: the work I was describing came out of **3D-Sky**, the MSCA fellowship I ran at INMA from July 2024 to June 2026. The Zaragoza edition was organised by the local European Researchers' Night team with Esciencia, and the CaixaForum auditorium ran micro-talks back to back for two hours.
+
+![On stage at CaixaForum Zaragoza](/images/news/noche-investigacion-2026-charla.jpg)
 
 Thanks to the organising team for the coaching sessions beforehand — the advice to leave the lectern, cut the text and answer "what is it for?" changed the talk substantially.
 
