@@ -45,7 +45,7 @@ The European Researchers' Night is itself a Marie Skłodowska-Curie action, whic
 
 ![On stage at CaixaForum Zaragoza](/images/news/noche-investigacion-2026-charla.jpg)
 
-Thanks to the organising team for the coaching sessions beforehand — the advice to leave the lectern, cut the text and answer "what is it for?" changed the talk substantially.
+Thanks to the organising team for the coaching sessions beforehand.
 
 ---
 
